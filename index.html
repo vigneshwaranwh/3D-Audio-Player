@@ -1,0 +1,567 @@
+<!-- HTML Page Start -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <!-- Head Start -->
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="Audio Player">
+    
+        <meta name="author" content="vigneshwaranwh">
+    
+        <meta name="keywords" content="vigneshwaranwh">
+    
+        <link rel="stylesheet" href="./assets/css/style.css">
+    
+        <link rel="shortcut icon" href="./assets/img/icon.png">
+
+        <title>3D Audio Player</title>
+    
+    </head>
+
+    <!-- Head End -->
+
+    <!-- Body Start -->
+
+    <body>
+
+        <audio id="a">
+
+            <source src="https://raw.githubusercontent.com/vigneshwaranwh/3D-Audio-Player/main/assets/audio/Ennappan%20Allava.m4a" type="audio/mpeg">
+            
+        </audio>
+
+        <div class="main flex" id="h">
+
+            <div class="shadows">
+
+                <div class="shadow shadow-1"></div>
+
+                <div class="shadow shadow-2"></div>
+                
+                <div class="shadow shadow-3"></div>
+
+            </div>
+
+            <div class="waves is-wave-playing" id="lgh">
+
+                <div class="wave"></div>
+
+                <div class="wave"></div>
+
+                <div class="wave"></div>
+
+                <div class="wave"></div>
+
+                <div class="wave"></div>
+                
+                <div class="wave"></div>
+                
+                <div class="wave"></div>
+
+            </div>
+
+            <div class="a">
+
+                <div class="a_front face"></div>
+
+                <div class="a_back face"></div>
+
+                <div class="a_right face"></div>
+
+                <div class="a_left face"></div>
+
+                <div class="a_top face"></div>
+                
+                <div class="a_bottom face"></div>
+
+            </div>
+
+            <div class="b">
+
+                <div class="b_front face"></div>
+                
+                <div class="b_back face"></div>
+                
+                <div class="b_right face"></div>
+                
+                <div class="b_left face"></div>
+                
+                <div class="b_top face"></div>
+                
+                <div class="b_bottom face"></div>
+
+            </div>
+
+            <div class="c">
+
+                <div class="c_front face"></div>
+                
+                <div class="c_back face"></div>
+                
+                <div class="c_right face"></div>
+                
+                <div class="c_left face"></div>
+                
+                <div class="c_top face"></div>
+                
+                <div class="c_bottom face"></div>
+
+            </div>
+
+            <div class="d">
+            
+                <div class="d_front face"></div>
+
+                <div class="d_back face"></div>
+                
+                <div class="d_right face"></div>
+
+                <div class="d_left face"></div>
+
+                <div class="d_top face"> 
+
+                    <div class="d-shadow" id="tsh"></div>
+
+                </div>
+
+                <div class="d_bottom face"></div>
+
+            </div>
+
+            <div class="e">
+
+                <div class="e_front face"></div>
+                
+                <div class="e_back face"></div>
+                
+                <div class="e_right face"></div>
+                
+                <div class="e_left face"></div>
+                
+                <div class="e_top face"></div>
+                
+                <div class="e_bottom face"></div>
+              
+            </div>
+            
+            <div class="f">
+            
+                <div class="f_front face"></div>
+            
+                <div class="f_back face"></div>
+            
+                <div class="f_right face"></div>
+            
+                <div class="f_left face"></div>
+            
+                <div class="f_top face"></div>
+            
+                <div class="f_bottom face"></div>
+            
+            </div>
+            
+            <div class="g">
+            
+                <div class="g_front face"></div>
+            
+                <div class="g_back face"></div>
+            
+                <div class="g_right face"></div>
+            
+                <div class="g_left face"></div>
+            
+                <div class="g_top face"></div>
+            
+                <div class="g_bottom face"></div>
+            
+            </div>
+            
+            <div class="h" id="cas">
+            
+                <div class="h_front face"></div>
+            
+                <div class="h_back face"></div>
+            
+                <div class="h_right face"></div>
+            
+                <div class="h_left face"></div>
+            
+                <div class="h_top face"></div>
+            
+            </div>
+
+            <div class="i">
+
+                <div class="i_front face"></div>
+                
+                <div class="i_back face"></div>
+                
+                <div class="i_right face"></div>
+                
+                <div class="i_left face"></div>
+                
+                <div class="i_top face"></div>
+                
+                <div class="i_bottom face"></div>
+              
+            </div>
+            
+            <div class="j">
+            
+                <div class="j_front face"></div>
+            
+                <div class="j_back face"></div>
+            
+                <div class="j_right face"></div>
+            
+                <div class="j_left face"></div>
+            
+                <div class="j_top face"></div>
+            
+                <div class="j_bottom face"></div>
+            
+            </div>
+            
+            <div class="k">
+            
+                <div class="k_front face"></div>
+            
+                <div class="k_back face"></div>
+            
+                <div class="k_right face"></div>
+            
+                <div class="k_left face"></div>
+            
+                <div class="k_top face"></div>
+            
+                <div class="k_bottom face"></div>
+            
+            </div>
+            
+            <div class="buttons">
+            
+                <div class="button">
+            
+                    <div class="button-a">
+            
+                        <div class="button-a_front face"></div>
+            
+                        <div class="button-a_back face"></div>
+            
+                        <div class="button-a_right face"></div>
+            
+                        <div class="button-a_left face"></div>
+            
+                        <div class="button-a_top face"></div>
+            
+                        <div class="button-a_bottom face"></div>
+            
+                    </div>
+            
+                    <div class="button-b">
+            
+                        <div class="button-b_front face"></div>
+            
+                        <div class="button-b_back face"></div>
+            
+                        <div class="button-b_right face"></div>
+            
+                        <div class="button-b_left face"></div>
+            
+                        <div class="button-b_top face"></div>
+            
+                        <div class="button-b_bottom face"></div>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="button">
+            
+                    <div class="button-a">
+            
+                        <div class="button-a_front face"></div>
+            
+                        <div class="button-a_back face"></div>
+            
+                        <div class="button-a_right face"></div>
+            
+                        <div class="button-a_left face"></div>
+            
+                        <div class="button-a_top face"></div>
+            
+                        <div class="button-a_bottom face"></div>
+            
+                    </div>
+            
+                    <div class="button-b">
+            
+                        <div class="button-b_front face"></div>
+            
+                        <div class="button-b_back face"></div>
+            
+                        <div class="button-b_right face"></div>
+            
+                        <div class="button-b_left face"></div>
+            
+                        <div class="button-b_top face"></div>
+            
+                        <div class="button-b_bottom face"></div>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="button">
+            
+                    <div class="button-a">
+            
+                        <div class="button-a_front face"></div>
+            
+                        <div class="button-a_back face"></div>
+            
+                        <div class="button-a_right face"></div>
+            
+                        <div class="button-a_left face"></div>
+            
+                        <div class="button-a_top face"></div>
+            
+                        <div class="button-a_bottom face"></div>
+            
+                    </div>
+            
+                    <div class="button-b">
+            
+                        <div class="button-b_front face"></div>
+            
+                        <div class="button-b_back face"></div>
+            
+                        <div class="button-b_right face"></div>
+                  
+                        <div class="button-b_left face"></div>
+                  
+                        <div class="button-b_top face"></div>
+                  
+                        <div class="button-b_bottom face"></div>
+                  
+                    </div>
+                
+                </div>
+                
+                <div class="button">
+                
+                    <div class="button-a">
+                
+                        <div class="button-a_front face"></div>
+                
+                        <div class="button-a_back face"></div>
+                
+                        <div class="button-a_right face"></div>
+                
+                        <div class="button-a_left face"></div>
+                
+                        <div class="button-a_top face"></div>
+                
+                        <div class="button-a_bottom face"></div>
+                
+                    </div>
+                
+                    <div class="button-b">
+                
+                        <div class="button-b_front face"></div>
+                
+                        <div class="button-b_back face"></div>
+                
+                        <div class="button-b_right face"></div>
+                
+                        <div class="button-b_left face"></div>
+                
+                        <div class="button-b_top face"></div>
+                
+                        <div class="button-b_bottom face"></div>
+                
+                    </div>
+                
+                </div>
+                
+                <div class="button">
+                
+                    <div class="button-a">
+                
+                        <div class="button-a_front face"></div>
+                
+                        <div class="button-a_back face"></div>
+                
+                        <div class="button-a_right face"></div>
+                
+                        <div class="button-a_left face"></div>
+                
+                        <div class="button-a_top face"></div>
+                
+                        <div class="button-a_bottom face"> </div>
+                
+                    </div>
+                
+                    <div class="button-b">
+                
+                        <div class="button-b_front face"></div>
+                
+                        <div class="button-b_back face"></div>
+                
+                        <div class="button-b_right face"></div>
+                
+                        <div class="button-b_left face"></div>
+                
+                        <div class="button-b_top face"></div>
+                
+                        <div class="button-b_bottom face"></div>
+                
+                    </div>
+                
+                </div>
+                
+                <div class="button">
+                
+                    <div class="button-a">
+                
+                        <div class="button-a_front face"></div>
+                
+                        <div class="button-a_back face"></div>
+                
+                        <div class="button-a_right face"></div>
+                
+                        <div class="button-a_left face"></div>
+                
+                        <div class="button-a_top face"></div>
+                
+                        <div class="button-a_bottom face"></div>
+                
+                    </div>
+                
+                    <div class="button-b">
+                
+                        <div class="button-b_front face"></div>
+                
+                        <div class="button-b_back face"></div>
+                
+                        <div class="button-b_right face"></div>
+                
+                        <div class="button-b_left face"></div>
+                
+                        <div class="button-b_top face"></div>
+                
+                        <div class="button-b_bottom face"></div>
+                
+                    </div>
+                
+                </div>
+              
+            </div>
+            
+            <div class="circle flex">
+            
+                <div class="circle-a">sa
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_side"></div>
+            
+                    <div class="circle-a_bottom"></div>
+            
+                    <div class="circle-a_top"></div>
+            
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </body>
+
+    <!-- Body End -->
+
+    <script  src="./assets/js/main.js"></script>
+
+    <script src="./assets/js/lock.js"></script>
+
+</html>
+
+    <!-- HTML Page End -->
